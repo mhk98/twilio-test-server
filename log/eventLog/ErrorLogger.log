@@ -1,0 +1,6 @@
+{"level":"error","message":"/api/v1/report/2 user is not defined","timestamp":"2023-09-10T12:57:09.918Z"}
+{"level":"error","message":"/api/v1/user/signup WHERE parameter \"Email\" has invalid \"undefined\" value","timestamp":"2023-11-26T19:03:25.702Z"}
+{"level":"error","message":"/api/v1/user/signup Cannot read properties of undefined (reading 'path')","timestamp":"2023-11-26T19:06:21.468Z"}
+{"level":"error","message":"/api/v1/user/signup notNull Violation: usertbls.Image cannot be null","timestamp":"2023-11-26T19:09:16.364Z"}
+{"level":"error","message":"/api/v1/user/signup notNull Violation: usertbls.Image cannot be null","timestamp":"2023-11-26T19:09:47.652Z"}
+{"level":"error","message":"/api/v1/user/signup notNull Violation: usertbls.Image cannot be null","timestamp":"2023-11-26T19:10:40.197Z"}
