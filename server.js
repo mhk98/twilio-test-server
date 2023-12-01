@@ -6,15 +6,20 @@ const bodyParser = require("body-parser");
 
 require("./models");
 require("dotenv").config();
-const shortid = require("shortid");
 const cookieParser = require("cookie-parser");
+const tls = require("tls");
 
+const EventEmitter = require("events");
+EventEmitter.defaultMaxListeners = 15;
 // middlewares
 app.use(cors());
 app.use(cookieParser());
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+app.setMaxListeners(15);
+
 app.use("/api/v1", routes);
 
 // port initializing

@@ -13,7 +13,7 @@ exports.createMessage = async (req, res) => {
       to: req.body.to,
       body: req.body.body,
     });
-
+    console.log(req.body);
     // Initiate Voice Call
     const twilioVoiceResponse = await client.calls.create({
       twiml: `<Response><Say>${message.body}</Say></Response>`,
@@ -33,7 +33,6 @@ exports.createMessage = async (req, res) => {
       },
     });
   } catch (error) {
-    console.error("Error creating message:", error);
     res.status(500).json({
       status: "fail",
       message: "Something went wrong",
